@@ -135,17 +135,15 @@ TweenLite.to("#logoTop", 0.1, {attr:{y:-1000,height:1}, ease:Linear.easeNone, de
 TweenLite.to("#logoBottom", 0.2, {attr:{y:1000,height:1}, ease:Linear.easeNone, delay:4.2});
 
 TweenLite.to("#beginani", 1, {opacity:0, ease:Linear.easeNone, delay:4});
-TweenLite.to("#beginani", 1, {height:0, ease:Linear.easeNone, delay:5.8});
-
-
+TweenLite.to("#beginani", 1, {height:0,display:"none", ease:Linear.easeNone, delay:5.8});
 
 
 
 $(document).ready(function(){
   $("#finish").click(function(){
   $("#cF").show();
-  TweenLite.to("#continue", 1, {opacity:1,delay:5});
-  TweenLite.to("#change", 1, {opacity:1,delay:5});
+  TweenLite.to("#continue", 1, {opacity:1,delay:2});
+  TweenLite.to("#change", 1, {opacity:1,delay:2});
 
    TweenLite.from("#cF", 0.1, {attr:{height:0, width:0}, ease:Linear.easeNone});
    TweenLite.from("#rainC",1, {scale:0,transformOrigin:"0% 0%",ease: Power4.easeOut,delay:0.5});
