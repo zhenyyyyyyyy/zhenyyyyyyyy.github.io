@@ -3,6 +3,13 @@
 -webkit-对应 Safari and Chrome
  -o- for Opera
  -ms- for Internet Explorer*/
+@font-face
+{
+font-family: myFirstFont;
+src: url('cosmo/AkkuratPro-Bold.otf');
+}
+
+
 
 *{
 	box-sizing: border-box;
@@ -188,7 +195,7 @@ body{
 	display:block;
 	margin:0.019375rem;
 	content:"Cosmo";
-	font-family:"AkkuratPro-Bold";
+	font-family:myFirstFont;
 	font-size:0.03875rem;
 	color:black;
 	letter-spacing: 0.0019375rem;
@@ -201,7 +208,7 @@ body{
 	display:block;
 	margin:0.019375rem;
 	content:"Brand Visual Identity";
-	font-family:"AkkuratPro-Bold";
+	font-family:myFirstFont;
 	font-size:0.03875rem;
 	color:black;
 	letter-spacing: 0.0019375rem;

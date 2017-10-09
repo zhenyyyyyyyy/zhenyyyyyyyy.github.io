@@ -1,6 +1,12 @@
 /*
 0.0019375rem =1px;*/
 
+@font-face
+{
+font-family: myFirstFont;
+src: url('RainCo/LetterGothicStd.otf');
+}
+
 
 html{font-size: 100px;}
 body{font-size: 0.14rem;}
@@ -55,7 +61,7 @@ a{
 	text-decoration: none;
 	font-size:0.029rem;
 	font-weight: bold;
-	font-family:"Letter Gothic Std";
+	font-family:myFirstFont;
 	text-align: center;
 	color:black;
 	margin:0.039rem auto;
@@ -210,7 +216,7 @@ p{
 	position:fixed;
 	text-decoration: none;
 	font-size:0.025rem;
-	font-family:"Letter Gothic Std";
+	font-family:myFirstFont;
 	text-align: center;
 	color:black;
 	z-index: 1000;
