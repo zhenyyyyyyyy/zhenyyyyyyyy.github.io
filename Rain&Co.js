@@ -58,6 +58,7 @@
 $(function(){
     $("#navi").children().bind("click",function(){
         $(this).addClass("active");
+        $(this).siblings().removeClass("active");
         $("#page").attr("src", $(this).attr("data-href"));
     });
 })
