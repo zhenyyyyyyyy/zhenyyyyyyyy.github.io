@@ -570,7 +570,7 @@ body{
  
 .Fs{
     width:100%;
-    font-family:"AkkuratPro-Bold";
+    font-family:myFirstFont;
     font-size:0.03875rem;
     color:black;
     letter-spacing: 0.0019375rem;
