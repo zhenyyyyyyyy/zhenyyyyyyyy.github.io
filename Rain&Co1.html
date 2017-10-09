@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+<link rel="stylesheet" type="text/css" href="Rain&Co.css"/>
+</head>
+
+<body>
+
+
+<div id="container">
+
+
+
+<!-- circles//////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <img id="1" class="im" src="RainCo/circles/1.png"/>
+    <img id="2" class="im" src="RainCo/circles/2.png"/>
+    <img id="3" class="im" src="RainCo/circles/3.png"/>
+    <img id="4" class="im" src="RainCo/circles/4.png"/>
+    <img id="5" class="im" src="RainCo/circles/5.png"/>
+    <img id="6" class="im" src="RainCo/circles/6.png"/>
+    <img id="7" class="im" src="RainCo/circles/7.png"/>
+    <img id="8" class="im" src="RainCo/circles/8.png"/>
+    <img id="9" class="im" src="RainCo/circles/9.png"/>
+    <img id="10" class="im" src="RainCo/circles/10.png"/>
+    <img id="11c" class="im" src="RainCo/circles/11c.png"/>
+    <img id="12c" class="im" src="RainCo/circles/12c.png"/>
+    <img id="13c" class="im" src="RainCo/circles/13c.png"/>
+    <img id="14c" class="im" src="RainCo/circles/14c.png"/>
+    <img id="15c" class="im" src="RainCo/circles/15c.png"/>
+
+
+    
+</div>
+
+
+
+
+</body>
+
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+<script>
+var img = document.getElementById("im");
+
+
+window.onload = function() {
+
+    var im = document.getElementsByClassName("im");
+    var i;
+    for (i = 0; i < im.length; i++) {
+      var imLeft = (Math.random()-1)*300 + (Math.random()*1500);
+      var imTop = (Math.random()-1)*200 + (Math.random()*800);
+        im[i].style.left = imLeft+"px";
+        im[i].style.top = imTop+"px";
+
+    }
+}
+
+
+var container = document.getElementById("container");
+container.onmousemove = function move(e){
+    var rotateDeg = e.offsetX;
+
+    if(e.clientX>550){
+
+        TweenLite.to(".im", 10, {rotation:rotateDeg, transformOrigin:"center", ease: SlowMo.ease.config(0.4, 0.1, false)});
+    }
+
+}
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+

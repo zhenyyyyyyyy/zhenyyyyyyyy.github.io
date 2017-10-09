@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+   
+<link rel="stylesheet" type="text/css" href="Rain&Co.css"/>
+<style>
+#container{
+    width:100%;
+    height:100%;
+    display: block;
+    position: fixed;
+
+}
+
+.round{
+        /*transition: transform 4s ease-in-out;*/
+        transform-origin: 50% 50%;
+        animation: round 2s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+}
+
+    @keyframes round {
+        0% {
+            transform: scale(0.9, 0.9);
+            transform-origin: 50% 50%;
+        }
+        70% {
+            transform: scale(1.2, 1.2);
+            transform-origin: 50% 50%;
+        }
+        100% {
+            transform: scale(1, 1);
+            transform-origin: 50% 50%;
+        }
+    }
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+
+
+<script>
+var images = ["r1.svg","r2.svg","r3.svg","r4.svg","r5.svg","r6.svg","r7.svg","r8.svg","r9.svg","r10.svg","r11.svg","r12.svg","r13.svg","r14.svg","r15.svg","r16.svg","r17.svg","r18.svg","r19.svg","r20.svg","r21.svg","r22.svg","r23.svg","r24.svg","r25.svg","r26.svg","r27.svg","r28.svg","r29.svg","r30.svg","r31.svg","r32.svg","r33.svg","r34.svg","r35.svg","r36.svg","r37.svg","r38.svg","r39.svg","r40.svg"];
+
+var container = document.getElementById("container");
+var rounds = new Array();
+var limit = 800; 
+function addRound(x,y){
+    var img = document.createElement("embed");
+
+    img.setAttribute("class","round");
+    img.setAttribute("src", "RainCo/round/"+images[Math.floor(Math.random()*(images.length))]);
+    var width = Math.random()*20+10;
+    var height = Math.random()*20+10;
+    img.style.width = width+ "px";
+    img.style.height = height+ "px";
+    var skewX = Math.random()*10;
+    var skewY = Math.random()*10;
+
+    var offsetTimes=4;
+    img.style.position = "absolute";
+    img.style.left = (x-width/2+Math.random()*offsetTimes*width)+ "px";
+    img.setAttribute("data-skew", skewX+","+skewY);
+    img.style.top = (y-height/2+Math.random()*offsetTimes*height)+ "px"
+    container.appendChild(img);
+    return img;
+}
+
+    container.onmousemove = function(e){
+        // if(e.moveX>3||e.moveY>3){
+
+        rounds.push(addRound(e.clientX, e.clientY));
+        if(rounds.length>limit){    
+         
+            document.getElementsByClassName("round")[0].remove();
+        }
+    }
+
+
+</script>
+
+
+
+
+
+
