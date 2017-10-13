@@ -56,19 +56,22 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	margin:0px auto;
 }
 
+
 #circles{
 	width:100%;
 }
 
+    .red{
+    	fill:#D60012;
+	    stroke:#A1000E; 
+	    stroke-width:0.5;
+	}
 
-    .red{fill:#D60012;
-	     stroke:#A1000E; 
-	     stroke-width:0.5;
-	     }
 
-	.grey{fill:#C5C6C6;
-		  stroke:#949595; 
-	      stroke-width:0.5;
+	.grey{
+		fill:#C5C6C6;
+		stroke:#949595; 
+	    stroke-width:0.5;
 	}
 
 
@@ -231,7 +234,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 /*secondpartendinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
 
 
-
 #thirdpart{
 	float:left;
 	width:100%;
@@ -328,19 +330,19 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 }
 
 #cir1{
-    transition:7s ease-out;
+    transition:all 2s linear;
 }
 
 #cir2{
-    transition:2s ease-out;
+    transition:all 2s ease-in;
 }
 
 #cir3{
-    transition:5s linear;
+    transition:all 2s linear;
 }
 
 #cir4{
-    transition:1.5s linear;
+    transition:all 2s ease-in;
 }
 
 
@@ -433,8 +435,11 @@ src: url('cosmo/AkkuratPro-Bold.otf');
     width:100%;
 }
 
+
+
+
 #rediconB{
-	width:95%;
+	width:80%;
 	height:70%;
 	margin:0px auto;
 	background-color:#D60012;

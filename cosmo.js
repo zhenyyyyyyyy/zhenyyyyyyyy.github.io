@@ -64,7 +64,7 @@ TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
         bigPeople.style.top="4900px";
     }
     if(window.scrollY>4800){
-        basket.style.top="5700px";
+        basket.style.top="5800px";
     }
 
 };
@@ -81,8 +81,8 @@ var circles = document.getElementById("circles");
 
 
     circles.onmouseover=function move(e){
-        mouseX = ((Math.random()-0.5)*e.clientX)*0.9;
-        mouseY = ((Math.random()-0.5)*e.clientY)*0.9;
+        mouseX = ((Math.random()-0.5)*e.clientX);
+        mouseY = ((Math.random()-0.5)*e.clientY);
 
         redT.style.transform="translate("+mouseX+"px, "+mouseY+"px)";
         red2.style.transform="translate("+mouseX+"px, "+mouseY+"px)";
@@ -118,38 +118,20 @@ var circles = document.getElementById("circles");
 
 
 
-    cirlAni.onmousemove=function demo(e){
+     self.setInterval(function cirAnimation(){
 
-        cir1.style.cx=e.offsetX+100;
-        cir1.style.cy=e.offsetY+100;
+        cir1.style.cx=Math.random()*1000;
+        cir1.style.cy=Math.random()*2000;
 
-        cir2.style.cx=e.offsetX+200;
-        cir2.style.cy=e.offsetY+500;
+        cir2.style.cx=Math.random()*1500;
+        cir2.style.cy=Math.random()*1500;
 
-        cir3.style.cx=e.offsetX-200;
-        cir3.style.cy=e.offsetY-200;
+        cir3.style.cx=Math.random()*2000;
+        cir3.style.cy=Math.random()*2000;
 
-        cir4.style.cx=e.offsetX+100;
-        cir4.style.cy=e.offsetY+100;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        cir4.style.cx=Math.random()*900;
+        cir4.style.cy=Math.random()*1500;
+    },2000);
 
 
 
