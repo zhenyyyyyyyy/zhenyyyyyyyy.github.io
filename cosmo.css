@@ -18,14 +18,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 }
 
-html{font-size: 100px;}
-body{font-size: 0.14rem;}
-body{
-	padding:0;
-	margin:0;
-}
-
-
 
 #container-fluid{
 	width:100%;
@@ -51,7 +43,7 @@ body{
 #redpage{
 	position:absolute;
 	width:100%;
-	height:2.325rem;
+	height:1200px;
 	background-color:#D60012;
 	z-index: 999;
 	transform:scale(1, 1);
@@ -62,7 +54,7 @@ body{
 	width:35%;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:0.8rem;
+	margin-top:420px;
 	/*border:1px solid black;*/
 }
 
@@ -139,12 +131,11 @@ body{
 /*client&work*/
 #switch{
 	position:absolute;
-	top:3.27rem;
-	left:0.65rem;
+	top:1690px;
+	left:235px;
     width:30%;
 	margin:0px auto;
-	height:0.19375rem;
-	/*border:1px solid black;*/
+	height:10px;
 	background-color:white;
 	z-index: 200;
 	transform:scale(1, 1);
@@ -154,25 +145,20 @@ body{
 
 
 #on{
-/*	position:relative;*/
-	/*top:100%;
-	left:15%;*/
 	width:60%;
 	margin:0px auto;
-/*	padding:0 0.030rem;*/
-	height:0.19375rem;
-	/*border:1px solid black;*/
+	height:100px;
 }
 
 .client{
 	float:left;
 	text-align: center;
-	margin:0.019375rem 0px;
-	margin-right:0.19375rem;
+	margin:10px 0px;
+	margin-right:100px;
 	font-family:"Arial";
-	font-size:0.02325rem;
+	font-size:12px;
 	color:#808080;
-	letter-spacing: 0.003875rem;
+	letter-spacing: 2px;
 	text-decoration: none;
 	list-style-type: none;
 	/*border:1px solid black;*/
@@ -181,11 +167,11 @@ body{
 .work{
 	float:left;
 	text-align: center;
-	margin:0.019375rem 0px;
+	margin:10px 0px;
 	font-family:"Arial";
-	font-size:0.02325rem;
+	font-size:12px;
 	color:#808080;
-	letter-spacing: 0.003875rem;
+	letter-spacing: 2px;
 	text-decoration: none;
 	list-style-type: none;
 	/*border:1px solid black;*/
@@ -193,12 +179,12 @@ body{
 
 .client:after{
 	display:block;
-	margin:0.019375rem;
+	margin:10px;
 	content:"Cosmo";
 	font-family:myFirstFont;
-	font-size:0.03875rem;
+	font-size:20px;
 	color:black;
-	letter-spacing: 0.0019375rem;
+	letter-spacing:1px;
 	text-decoration: none;
 	list-style-type: none;
 }
@@ -206,19 +192,15 @@ body{
 
 .work:after{
 	display:block;
-	margin:0.019375rem;
+	margin:10px;
 	content:"Brand Visual Identity";
 	font-family:myFirstFont;
-	font-size:0.03875rem;
+	font-size:20px;
 	color:black;
-	letter-spacing: 0.0019375rem;
+	letter-spacing: 1px;
 	text-decoration: none;
 	list-style-type: none;
 }
-
-
-
-
 
 
 /*firstpartendingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
@@ -227,7 +209,6 @@ body{
 /*secondpart*/
 #secondpart{
     width:100%;
-  /*  background:blue;*/
 }
 
 
@@ -236,15 +217,14 @@ body{
     width:49%;
     margin:0px auto;
     padding-top:9%;
- /*   border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 
 #introductionsentence{
     width:100%;
     font-family:"Baskerville";
-    font-size:0.062rem;
-    word-spacing:0.0038rem;
+    font-size:32px;
+    word-spacing:2px;
     color:black;
     text-decoration: none;
     text-align: center;
@@ -260,7 +240,7 @@ body{
    /*border:1px solid rgba(0, 0, 0, 0.4);*/
     margin-right:auto;
     margin-left:auto;
-    margin-top:20%;
+    margin-top:30%;
     transition:all 0.4s ease-out;
 }
 
@@ -348,12 +328,10 @@ body{
 	width:100%;
 	padding-right:30%;
 	padding-top:33%;
-/*	margin-top:30%;*/
 	font-family:"Baskerville";
-	font-size:0.05425rem;
-	word-spacing:0.0038rem;
+	font-size:29px;
+	word-spacing:2px;
     color:black;
-	/*text-decoration: none;*/
 	text-align:right;
 }
 
@@ -365,9 +343,7 @@ body{
 
 #forthpart{
     width:100%;
-    /*background:black;*/
     float:left;
-    /*border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 
@@ -404,11 +380,10 @@ body{
 /*bigcard*/
 #bigcard{
     position:absolute;
-    top:8rem;
+    top:4230px;
     margin:0px auto;
     width:100%;
      transition:all 0.4s linear;
- /*   border:1px solid rgba(0, 0, 0, 0.4);*/
     z-index: 200;
 }
 
@@ -427,7 +402,7 @@ body{
 /*bigpeople*/
 #bigpeople{
     position:absolute;
-    top:10.2rem;
+    top:5600px;
     margin:0px auto;
     width:100%;
     transition:all 0.4s ease-out;
@@ -443,18 +418,14 @@ body{
 #pimg{
     width:100%;
 }
-/*bigpeople*/
 
 
-
-/*basket*/
 #basket{
     position:absolute;
-    top:12.5rem;
+    top:6450px;
     margin:0px auto;
     width:100%;
     transition:all 0.5s ease-out;
- /*   border:1px solid rgba(0, 0, 0, 0.4);*/
     z-index: 200;
      
 
@@ -462,7 +433,7 @@ body{
 
 #ball{
     width:45%;
-    margin-left:1.3rem;
+    margin-left:670px;
 }
 
 #ballimg{
@@ -523,8 +494,6 @@ body{
     }
 
 
-
-
 /*fifthpartendinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
 
 
@@ -538,31 +507,28 @@ body{
 
 #final{
     width:100%;
-    padding: 0.1rem 0.2rem;
+    padding: 50px 100px;
     float:left;
- /*   height:150px;*/
-    /*border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 
 
 #bottom{
-	padding:0.02rem 0rem;
+	padding:10px 0px;
     float:left;
     width:45%;
     height:100%;
-   /* border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 
 
 .Field{
-    padding:0.01rem 0rem;
+    padding:5px 0px;
     width:100%;
     font-family:"Arial";
-    font-size:0.019375rem;
+    font-size:10px;
     color:#808080;
-    letter-spacing:0.003875rem;
+    letter-spacing:2px;
     list-style-type: none;
     /*border:1px solid rgba(0, 0, 0, 0.4);*/
 }
@@ -571,12 +537,11 @@ body{
 .Fs{
     width:100%;
     font-family:myFirstFont;
-    font-size:0.03875rem;
+    font-size:20px;
     color:black;
-    letter-spacing: 0.0019375rem;
+    letter-spacing: 1px;
     list-style-type: none;
-    line-height:0.0678125rem;
-   /* border:1px solid rgba(0, 0, 0, 0.4);*/
+    line-height:35px;
 }
 
 
@@ -590,7 +555,7 @@ body{
 }
 
 #cosmoL{
-    padding:0.05rem 0px;
+    padding:25px 0px;
     width:35%;
     float:right;
 }
@@ -601,45 +566,6 @@ body{
 
 
 /*///////////////////////////////////////////////////////////////*/
-
-
-
-
-
-/*
-
-
-.move2{
-	position:absolute;
-	top:15.2rem;
-	width:100%;
-	margin:0px auto;
-	z-index: 500;
-
-}
-
-
-
-#pingpang{
-	width:100%;
-	border:1px solid black;
-
-}
-
-
-
-
-
-
-
-*/
-
-
-
-
-
-
-
 
 
 

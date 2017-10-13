@@ -1,68 +1,5 @@
 
 
-
-// window.onload=function(){
-// function move(e);
-// function stop(e);
-// function demo(e); 
-// }
-
-
-
-(function (doc, win) {
-    // 分辨率Resolution适配
-    var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-            var clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
-        };
-
-    // Abort if browser does not support addEventListener
-    if (!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
-    
-    (function(){
-        return;
-        var dpr = scale =1;
-         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
-        var devicePixelRatio = win.devicePixelRatio;
-        if (isIPhone) {
-            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
-            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
-                dpr = 3;
-            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
-                dpr = 2;
-            } else {
-                dpr = 1;
-            }
-        } else {
-            // 其他设备下，仍旧使用1倍的方案
-            dpr = 1;
-        }
-           scale = 1 / dpr;
-           
-           // 
-           var metaEl = "";
-           metaEl = doc.createElement('meta');
-        metaEl.setAttribute('name', 'viewport');
-        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
-        if (docEl.firstElementChild) {
-            docEl.firstElementChild.appendChild(metaEl);
-        } else {
-            var wrap = doc.createElement('div');
-            wrap.appendChild(metaEl);
-            doc.write(wrap.innerHTML);
-        }
-    })();
-        
-})(document, window);    
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -122,13 +59,13 @@ TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
     }
 
     if(window.scrollY>3200){
-        bigCard.style.top="7.7rem";
+        bigCard.style.top="3950px";
     }
     if(window.scrollY>4550){
-        bigPeople.style.top="9.7rem";
+        bigPeople.style.top="5000px";
     }
     if(window.scrollY>5200){
-        basket.style.top="11.8rem";
+        basket.style.top="6100px";
     }
 
 };
@@ -200,40 +137,6 @@ var circles = document.getElementById("circles");
         cir4.style.cy=e.offsetY+100;
 
     }
-
-
-
-    // (function(){
-    //         // 动态加载script
-    //         var script = document.createElement('script');
-    //         var head = document.getElementsByTagName('head')[0];
-    //         // console.log(head);
-    //         // 脚本加载完就移除
-    //         script.onload = function(){
-    //             console.log('loaded script ready to remove');
-    //             head.removeChild(script);
-    //         };
-    //         script.src = './t.js';
-    //         console.log('load script');
-    //         // 将script放到head里
-    //         head.appendChild(script);
-    //     })();
-
-
-
-
-
-
-  // TweenLite.to("#pp1", 1, { ease: Bounce.easeOut, y:860 });
-
-  // TweenLite.to("#pp2", 1, { ease: Bounce.easeOut, y:800 });
-
-
-  // TweenLite.to("#bb1", 1, { ease: Bounce.easeOut, y:800 x:500});
-
-
-
-
 
 
 
