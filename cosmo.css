@@ -25,15 +25,11 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 /*firstpart*/
 #firstpart{
-	overflow:scroll;
 	width:100%;
 }
 
-
-
-
 #redpage{
-	position:absolute;
+	position:fixed;
 	width:100%;
 	height:1200px;
 	background-color:#D60012;
