@@ -8,6 +8,14 @@ src: url('RainCo/LetterGothicStd.otf');
 }
 
 
+html{font-size: 100px;}
+body{font-size: 0.14rem;}
+body{
+	padding:0;
+	margin:0;
+}
+
+
 *{
 	box-sizing: border-box;
 	padding:0px 0px;
