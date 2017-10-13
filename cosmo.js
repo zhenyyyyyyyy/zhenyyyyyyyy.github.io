@@ -3,7 +3,7 @@
 
 TweenLite.from("#logoani",0.6, {opacity:0, ease: Back.easeOut.config(1.3), x: -1000 });
 TweenLite.to("#logoani",0.5, {opacity:1, ease: Back.easeOut.config(1.3), x: 1300, delay:1});
-TweenLite.to("#redpage",0.5, {opacity:1, ease: Back.easeOut.config(1.3), y: -1300, delay:1.2});
+TweenLite.to("#redpage",.5, {opacity:1, ease: Back.easeOut.config(1.3), y: -1000, delay:1.2});
 
 
 
@@ -19,9 +19,41 @@ var icons = document.getElementsByClassName('icons')
 
 
 
+
+
+
+//7317
+
+
+// $(document).ready(function(){
+
+//     $(window).scroll(function(event){  
+
+//     var wScrollY = window.scrollY; // 当前滚动条位置    
+//     var wInnerH = window.innerHeight; // 设备窗口的高度（不会变）    
+//     var bScrollH = document.body.scrollHeight; // 滚动条总高度    
+
+//     if (wScrollY>= bScrollH*0.4) { 
+//         console.log("bScrollH:"+bScrollH);
+//         // console.log("wInnerH:"+wInnerH);
+//         console.log("wScrollY:"+wScrollY);
+//         console.log(wScrollY/bScrollH);
+
+
+//          switchs.style.transform="scale(1,0)";
+//         introductionsentence.style.opacity="1";
+//     }else{
+//         switchs.style.transform="scale(1,1)";
+
+//     } 
+// });  
+// });
+
+
+
 window.onscroll=function(e){
 
-    if(window.scrollY>1000){
+    if(window.scrollY>1150){
         switchs.style.transform="scale(1,0)";
         introductionsentence.style.opacity="1";
     }
@@ -66,6 +98,7 @@ TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
     }
 
 };
+
 
 
 var circles = document.getElementById("circles");
