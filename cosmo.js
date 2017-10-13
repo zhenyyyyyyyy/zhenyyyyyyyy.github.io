@@ -3,9 +3,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
-TweenLite.from("#logoani",1, {opacity:0, ease: Back.easeOut.config(1.3), x: -1000 });
-TweenLite.to("#logoani",1, {opacity:1, ease: Back.easeOut.config(1.3), x: 1300, delay:2});
-TweenLite.to("#redpage",1, {opacity:1, ease: Back.easeOut.config(1.3), y: -1300, delay:2.7});
+TweenLite.from("#logoani",0.6, {opacity:0, ease: Back.easeOut.config(1.3), x: -1000 });
+TweenLite.to("#logoani",0.5, {opacity:1, ease: Back.easeOut.config(1.3), x: 1300, delay:1});
+TweenLite.to("#redpage",0.5, {opacity:1, ease: Back.easeOut.config(1.3), y: -1300, delay:1.2});
 
 
 
@@ -19,24 +19,23 @@ var basket = document.getElementById('basket')
 var introductionsentence = document.getElementById('introductionsentence')
 var icons = document.getElementsByClassName('icons')
 
+
+
 window.onscroll=function(e){
 
-console.log(window.scrollY);
-
-    if(window.scrollY>1200){
-        console.log(1200);
+    if(window.scrollY>1000){
         switchs.style.transform="scale(1,0)";
         introductionsentence.style.opacity="1";
     }
 
     if(window.scrollY>1500){
-        spacial.style.marginTop="8%";
+        spacial.style.marginTop="10%";
     }
-    if(window.scrollY>2600){
+    if(window.scrollY>2400){
         thirdpart.style.marginTop="10%";
     }
 
-    if(window.scrollY>2700){
+    if(window.scrollY>2500){
 
 TweenLite.to("#angle", 7, {strokeDashoffset:0,ease: Power0.easeOut});
 TweenLite.to(".lines", 1, {opacity:1, ease: Power0.easeOut,delay:1});
@@ -58,20 +57,17 @@ TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
 
     }
 
-    if(window.scrollY>3200){
-        bigCard.style.top="3950px";
+    if(window.scrollY>3000){
+        bigCard.style.top="3900px";
     }
-    if(window.scrollY>4550){
-        bigPeople.style.top="5000px";
+    if(window.scrollY>4000){
+        bigPeople.style.top="4900px";
     }
-    if(window.scrollY>5200){
-        basket.style.top="6100px";
+    if(window.scrollY>4800){
+        basket.style.top="5800px";
     }
 
 };
-
-
-
 
 
 var circles = document.getElementById("circles");

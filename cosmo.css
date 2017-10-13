@@ -1,8 +1,4 @@
 
-/*-moz-对应 Firefox, 
--webkit-对应 Safari and Chrome
- -o- for Opera
- -ms- for Internet Explorer*/
 @font-face
 {
 font-family: myFirstFont;
@@ -21,10 +17,7 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 #container-fluid{
 	width:100%;
-/*	height:7000px;*/
 	margin:0px auto;
-/*	background:blue;*/
-/*	border:1px solid black;*/
 }
 
 
@@ -34,7 +27,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 #firstpart{
 	overflow:scroll;
 	width:100%;
-/*	border:1px solid black;*/
 }
 
 
@@ -55,7 +47,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:420px;
-	/*border:1px solid black;*/
 }
 
 #logocoms{
@@ -126,16 +117,14 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 }
 
-
-
 /*client&work*/
 #switch{
 	position:absolute;
-	top:1690px;
-	left:235px;
+	top:1700px;
+	left:320px;
     width:30%;
 	margin:0px auto;
-	height:10px;
+	height:100px;
 	background-color:white;
 	z-index: 200;
 	transform:scale(1, 1);
@@ -161,7 +150,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	letter-spacing: 2px;
 	text-decoration: none;
 	list-style-type: none;
-	/*border:1px solid black;*/
 }
 	
 .work{
@@ -174,7 +162,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	letter-spacing: 2px;
 	text-decoration: none;
 	list-style-type: none;
-	/*border:1px solid black;*/
 }
 
 .client:after{
@@ -205,14 +192,11 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 /*firstpartendingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
 
-
-/*secondpart*/
 #secondpart{
     width:100%;
 }
 
 
-/*introduction*/
 .introduction{
     width:49%;
     margin:0px auto;
@@ -234,10 +218,9 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 }
 
-/*spacial*/
+
 #spacial{
-    width:70%;
-   /*border:1px solid rgba(0, 0, 0, 0.4);*/
+    width:60%;
     margin-right:auto;
     margin-left:auto;
     margin-top:30%;
@@ -247,8 +230,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 #simg{
     width:100%;
 }
-
-
 
 
 /*secondpartendinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
@@ -263,7 +244,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	margin-left:auto;
 	margin-right:auto;
 	transition:all 0.4s ease-out;
-	/*border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 
@@ -273,8 +253,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 	float:left;
 	width:50%;
 	height:100%;
-	/*border:1px solid rgba(0, 0, 0, 0.4);
-	background-color:blue*/
 }
 
 
@@ -282,7 +260,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 #logoSvg{
 	width:90%;
 	margin-left:15%;
-	/*border:1px solid black;*/
 }
 
 .redcolor{
@@ -292,7 +269,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 .blackcolor{
 	fill:#231715;
-	/*filter:url(#f1);*/
 	opacity:0;
 }
 
@@ -320,7 +296,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 #logonotes{
 	float:left;
 	width:50%;
-	/*border:1px solid rgba(0, 0, 0, 0.4);*/
 
 }
 
@@ -388,7 +363,7 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 }
 
 #redcard{
-    width:48%;
+    width:45%;
 
     margin:0px auto;
 }
@@ -402,16 +377,15 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 /*bigpeople*/
 #bigpeople{
     position:absolute;
-    top:5600px;
+    top:5700px;
     margin:0px auto;
     width:100%;
     transition:all 0.4s ease-out;
-    /*border:1px solid rgba(0, 0, 0, 0.4);*/
     z-index: 200;
 }
 
 #people{
-    width:80%;
+    width:70%;
     margin:0px auto;
 }
 
@@ -432,17 +406,13 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 }
 
 #ball{
-    width:45%;
-    margin-left:670px;
+    width:35%;
+    margin-left:800px;
 }
 
 #ballimg{
     width:100%;
 }
-/*basket*/
-
-
-
 
 /*forthpartendinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
 
@@ -450,7 +420,7 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 #fifthpart{
     width:100%;
-    margin-top:45%;
+    margin-top:40%;
     background:#D60012;
     float:left;
     border:1px solid rgba(0, 0, 0, 0.4);
@@ -477,14 +447,10 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 #redicons{
     width:100%;
-    /*border:1px solid rgba(0, 0, 0, 0.4);*/
-    
-
 }
 
 .icons{
       fill:#FFFFFF;   
-/*      filter:url(#fil1);*/
       transition:all 0.5s ease-out;
     }
 
@@ -495,15 +461,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 
 /*fifthpartendinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
-
-
-
-
-
-
-
-
-
 
 #final{
     width:100%;
@@ -530,7 +487,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
     color:#808080;
     letter-spacing:2px;
     list-style-type: none;
-    /*border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
  
@@ -549,9 +505,7 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 
 #finalCosmo{
     float:left;
-/*    display:block;*/
     width:55%;
-   /* border:1px solid rgba(0, 0, 0, 0.4);*/
 }
 
 #cosmoL{
@@ -563,10 +517,6 @@ src: url('cosmo/AkkuratPro-Bold.otf');
 .cls-1{
     fill:#D60012;
 }
-
-
-/*///////////////////////////////////////////////////////////////*/
-
 
 
 
