@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+  /*iphone 6*/
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+
+
+ #logoani{
+    z-index: 999;
+    width:35%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:20px;
+}
+
+#logocoms{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+}
