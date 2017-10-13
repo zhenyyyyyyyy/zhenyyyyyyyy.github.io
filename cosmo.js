@@ -64,7 +64,7 @@ TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
         bigPeople.style.top="4900px";
     }
     if(window.scrollY>4800){
-        basket.style.top="5800px";
+        basket.style.top="5700px";
     }
 
 };
