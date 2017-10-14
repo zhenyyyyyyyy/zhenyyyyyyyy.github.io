@@ -71,17 +71,17 @@ window.onscroll = function() {
 
     }
 
-    if(scrollCount>0.304){
+    if(scrollCount>=0.304){
         card.style.top = (0.408*sH)+"px";
 
         card.style.opacity="1";
     }
-    if(scrollCount>0.415){
+    if(scrollCount>=0.413){
         people.style.top = (0.515*sH)+"px";
         people.style.opacity="1";
 
     }
-    if(scrollCount>0.524){
+    if(scrollCount>=0.515){
         basket.style.top = (0.61*sH)+"px";
         basket.style.opacity="1";
     }
