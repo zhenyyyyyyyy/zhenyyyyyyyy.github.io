@@ -12,6 +12,11 @@ var thirdpart = document.getElementById('thirdpart')
 var introductionsentence = document.getElementById('introductionsentence')
 var icons = document.getElementsByClassName('icons')
 
+var bigcard = document.getElementById('bigcard')
+var bigpeople = document.getElementById('bigpeople')
+var basket = document.getElementById('basket')
+
+
 var sH = document.documentElement.scrollHeight;
 
 
@@ -34,12 +39,12 @@ window.onscroll = function() {
         spacial.style.marginTop="9%";
         spacial.style.opacity="1";
     }
-    if(scrollCount>=0.25){
-        thirdpart.style.marginTop="9%";
+    if(scrollCount>=0.245){
+        thirdpart.style.marginTop="12%";
         thirdpart.style.opacity="1";
     }
 
-    if(scrollCount>=0.26){
+    if(scrollCount>=0.25){
         TweenLite.to("#angle", 7, {strokeDashoffset:0,ease: Power0.easeOut});
         TweenLite.to(".lines", 0.7, {opacity:1, ease: Power0.easeOut,delay:1});
         TweenLite.to("#outWhite", 1, {transform:"scale(0, 1)", ease: Power0.easeOut});
@@ -57,16 +62,18 @@ window.onscroll = function() {
         TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
     }
 
-    if(scrollCount>=0.33){
-        TweenLite.to("#bigcard",1.2, {opacity:1, y:-280, ease: Expo.easeOut});
-
+    if(scrollCount>=0.30){
+        bigcard.style.paddingTop="8%";
+        bigcard.style.opacity="1";
     }
-    if(scrollCount>=0.428){
-        TweenLite.to("#bigpeople",1.2, {opacity:1, y:-280, ease: Expo.easeOut});
-
+    if(scrollCount>=0.4){
+        bigpeople.style.paddingTop="8%";
+        bigpeople.style.opacity="1";
     }
-    if(scrollCount>=0.53){
-        TweenLite.to("#basket",1.2, {opacity:1, y:-280, ease: Expo.easeOut});
+
+    if(scrollCount>=0.5){
+        basket.style.paddingTop="6%";
+        basket.style.opacity="1";
     }
 
 }
