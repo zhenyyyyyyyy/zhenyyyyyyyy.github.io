@@ -1,6 +1,5 @@
 
 (function (doc, win) {
-    // 分辨率Resolution适配
     var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
         recalc = function () {

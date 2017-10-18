@@ -62,7 +62,7 @@ window.onscroll = function() {
         TweenLite.to(".redcolor",0.5, {opacity:0, ease: Power1.easeOut,delay:4.5});
     }
 
-    if(scrollCount>=0.30){
+    if(scrollCount>=0.32){
         bigcard.style.paddingTop="8%";
         bigcard.style.opacity="1";
     }
