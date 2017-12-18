@@ -8,11 +8,12 @@ src: url('RainCo/LetterGothicStd.otf');
 }
 
 
-html{font-size: 100px;}
-body{font-size: 0.14rem;}
+
+
 body{
 	padding:0;
 	margin:0;
+	font-size: 12px;
 }
 
 
@@ -29,7 +30,7 @@ body{
 #container{
 	width:100%;
 	height:100%;
-	margin:0rem auto;
+	margin:0 auto;
 }
 
 
@@ -44,48 +45,64 @@ body{
 
 
 #navi{
-
-	position:absolute;
-	top:0.18rem;
-	left:0.2rem;
-	width:0.290625rem;
-	height:1.5rem;
+	position:relative;
+	margin:70% 50%;
+	width:200px;
+	height: 700px;
 	background-color:white;
-	background-color:rgba(255, 255, 255, 0.5);
-	padding:0.0872rem 0.00969rem;
-	z-index: 999;
-	/*display:none;*/
+	opacity:.8;
+	padding: 15% 0;
+	z-index: 1000;
+	transform: scale(1, 1);
+	transform-origin: 0% 0%;
+	transition: all .3s ease-in;
+
+
 }
+
+
+
+
 
 
 a{
 	display:block;
 	text-decoration: none;
-	font-size:0.029rem;
+	font-size:15px;
 	font-weight: bold;
 	font-family:myFirstFont;
 	text-align: center;
 	color:black;
-	margin:0.039rem auto;
+	margin:15% auto;
+	z-index: 1000;
+
 
 }
 
 #finish{
+	padding-top:320px;
 	float:bottom;
-	margin-top:0.96rem;
+	margin: 15% auto;
 	cursor:pointer;
-
+	font-size:15px;
+	z-index: 1000;
 
 }
 
 
 #musicbutton{
 	float:bottom;
-	margin-top:0.039rem;
+	margin: 15% auto;
 	cursor:pointer;
-	font-size:0.025rem;
+	font-size:15px;
+	z-index: 1000;
 
 }
+
+
+
+
+
 
 
 .tri_add{
@@ -99,7 +116,7 @@ a{
 	height:100%;
 /*	border:1px solid black;*/
 	position:fixed;
-	z-index:1000;
+	z-index:4000;
 	opacity:1;
 	top:0rem;
 
@@ -112,13 +129,21 @@ a{
 }
 
 
+#logoTop{
+	opacity:0;
+}
+#logoBottom{
+	opacity:0;
+}
+
+
 
 #logoSvg{
 	position:fixed;
 	top:8%;
-	right:7.5%;
-	width:7%;
-	z-index: 999;
+	right:8%;
+	width:8%;
+	z-index: 2000;
 /*	border:1px solid black;*/
 }
 
@@ -217,7 +242,7 @@ iframe{
 .tips{
 	position:fixed;
 	text-decoration: none;
-	font-size:0.03rem;
+	font-size:12px;
 	font-family:myFirstFont;
 	text-align: center;
 	color:black;
@@ -225,7 +250,6 @@ iframe{
 	opacity:0;
 	left:49%;
 	bottom:15%;
-	text-shadow: 0.0020rem 0.0020rem 0.0020rem rgba(0, 0, 0, 0.2);
 }
 
 
@@ -250,10 +274,9 @@ iframe{
 	text-align: center;
 	color:black;
 	float:left;
-	text-shadow: 0.0020rem 0.0020rem 0.0020rem rgba(0, 0, 0, 0.2);
-	font-size:0.03rem;
+	font-size:12px;
 	cursor:pointer;
-		opacity:0;
+	opacity:0;
 
 
 
@@ -265,10 +288,9 @@ iframe{
 	text-align: center;
 	color:black;
 	float:right;
-	text-shadow: 0.0020rem 0.0020rem 0.0020rem rgba(0, 0, 0, 0.2);
-	font-size:0.03rem;
+	font-size:12px;
 	cursor:pointer;
-		opacity:0;
+	opacity:0;
 	
 
 }

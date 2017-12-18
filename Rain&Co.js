@@ -1,58 +1,4 @@
 
-(function (doc, win) {
-    var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-            var clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
-        };
-
-    if (!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
-    
-    (function(){
-        return;
-        var dpr = scale =1;
-         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
-        var devicePixelRatio = win.devicePixelRatio;
-        if (isIPhone) {
-
-            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
-                dpr = 3;
-            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
-                dpr = 2;
-            } else {
-                dpr = 1;
-            }
-        } else {
-  
-            dpr = 1;
-        }
-           scale = 1 / dpr;
-           
-           // 
-           var metaEl = "";
-           metaEl = doc.createElement('meta');
-        metaEl.setAttribute('name', 'viewport');
-        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
-        if (docEl.firstElementChild) {
-            docEl.firstElementChild.appendChild(metaEl);
-        } else {
-            var wrap = doc.createElement('div');
-            wrap.appendChild(metaEl);
-            doc.write(wrap.innerHTML);
-        }
-    })();
-        
-})(document, window);    
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 $(function(){
     $("#navi").children().bind("click",function(){
@@ -70,6 +16,75 @@ $("#musicbutton").removeClass("pause").addClass("play");
 $("#musicbutton").removeClass("play").addClass("pause");}});
 
 
+
+
+function load(){
+
+TweenLite.fromTo("#logoTop", 1.5, {opacity:0,attr:{height:0, x:840}},{attr:{height:1500, x:840},opacity:1,ease: Power3.easeOut});
+TweenLite.fromTo("#logoBottom", 0.2, {opacity:0},{opacity:1,delay:0.8});
+TweenLite.to("#logoTop", 0.1, {attr:{height:800},delay:1});
+
+TweenLite.to("#logoTop", 2, {attr:{width:20,x:820},rotation:-45, transformOrigin:"100% 100%",ease: Expo.easeOut,delay:1.5});
+TweenLite.to("#logoBottom", 2, {attr:{width:20},rotation:-45, transformOrigin:"0% 0%",ease: Expo.easeOut,delay:1.5});
+
+TweenLite.to("#logoTop", 0.2, {attr:{x:830, width:1,height:2000}, ease:Linear.easeNone, delay:4});
+TweenLite.to("#logoBottom", 0.2, {attr:{x:810,y:-310,width:1,height:2000}, ease:Linear.easeNone, delay:4});
+
+
+TweenLite.to("#logoTop", 0.1, {attr:{y:-1000,height:1}, ease:Linear.easeNone, delay:4.2});
+TweenLite.to("#logoBottom", 0.2, {attr:{y:1000,height:1}, ease:Linear.easeNone, delay:4.2});
+
+TweenLite.to("#beginani", 1, {opacity:0, ease:Linear.easeNone, delay:4});
+TweenLite.to("#beginani", 1, {height:0,display:"none", ease:Linear.easeNone, delay:5.8});
+
+
+}
+
+
+  var navi = document.getElementById('navi');
+  var container = document.getElementById('container');
+
+
+//   window.onmousemove = function(event){
+
+//     console.log(event.clientX);
+
+//     if(event.clientX <= 300){
+
+//      navi.style.transform = "scale(1, 1)";
+
+//  }else if(event.clientX > 300){
+
+//      navi.style.transform = "scale(0, 1)";
+
+//  }
+
+// }
+
+    
+
+    function scale(){
+
+    var time = new Date() * .00001;
+    var sX =Math.sin(time * 50);
+
+     console.log(sX);
+
+    if(sX >= -.5){
+
+     navi.style.transform = "scale(1, 1)";
+
+ }else if(sX < -.5){
+
+     navi.style.transform = "scale(0, 1)";
+
+ }
+
+ return function() {};
+
+}
+
+setInterval(scale,10);
 
 
 
@@ -117,24 +132,6 @@ $("#musicbutton").removeClass("play").addClass("pause");}});
     }
     }
 
-
-TweenLite.fromTo("#logoTop", 1.5, {attr:{height:0, x:840}},{attr:{height:1500, x:840},ease: Power3.easeOut});
-TweenLite.fromTo("#logoBottom", 0.2, {opacity:0},{opacity:1,delay:0.8});
-TweenLite.to("#logoTop", 0.1, {attr:{height:800},delay:1});
-
-TweenLite.to("#logoTop", 2, {attr:{width:20,x:820},rotation:-45, transformOrigin:"100% 100%",ease: Expo.easeOut,delay:1.5});
-TweenLite.to("#logoBottom", 2, {attr:{width:20},rotation:-45, transformOrigin:"0% 0%",ease: Expo.easeOut,delay:1.5});
-
-
-TweenLite.to("#logoTop", 0.2, {attr:{x:830, width:1,height:2000}, ease:Linear.easeNone, delay:4});
-TweenLite.to("#logoBottom", 0.2, {attr:{x:810,y:-310,width:1,height:2000}, ease:Linear.easeNone, delay:4});
-
-
-TweenLite.to("#logoTop", 0.1, {attr:{y:-1000,height:1}, ease:Linear.easeNone, delay:4.2});
-TweenLite.to("#logoBottom", 0.2, {attr:{y:1000,height:1}, ease:Linear.easeNone, delay:4.2});
-
-TweenLite.to("#beginani", 1, {opacity:0, ease:Linear.easeNone, delay:4});
-TweenLite.to("#beginani", 1, {height:0,display:"none", ease:Linear.easeNone, delay:5.8});
 
 
 
