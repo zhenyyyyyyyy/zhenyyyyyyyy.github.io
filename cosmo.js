@@ -11,13 +11,13 @@ var basket = document.getElementById('basket');
 var sH = document.documentElement.scrollHeight;
 
 
-// function load(){
+function load(){
     
-// TweenLite.from("#logoani",0.6, {opacity:0, ease: Back.easeOut.config(1.3), x: -1000 });
-// TweenLite.to("#logoani",0.5, {opacity:1, ease: Back.easeOut.config(1.3), x: 1300, delay:1});
-// TweenLite.to("#redpage",.5, {opacity:1,ease: Back.easeOut.config(1.3), y: -1500, delay:1.2});
+TweenLite.from("#logoani",0.6, {opacity:0, ease: Back.easeOut.config(1.3), x: -1000 });
+TweenLite.to("#logoani",0.5, {opacity:1, ease: Back.easeOut.config(1.3), x: 1300, delay:1});
+TweenLite.to("#redpage",.5, {opacity:1,ease: Back.easeOut.config(1.3), y: -1500, delay:1.2});
 
-// }
+}
 
 
 window.onscroll = function() {
